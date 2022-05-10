@@ -12,7 +12,7 @@ function App() {
   }
 
   const handleClick = () => {
-    let expReg = /a*b(?!ca*)/
+    let expReg = /^a*(b|ca*)$/
     let booleano = expReg.test(valor);
     setResultado(booleano)
   }
